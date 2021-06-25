@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.gardenassit.model.FlowerGarden;
 import com.example.gardenassit.repository.FlowerGardenRepository;
 import com.example.gardenassit.service.FlowerGardenService;
-
+// to interact with flower repository by creating a Rest API
 @CrossOrigin
 @RestController
 //to set an api layer
