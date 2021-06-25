@@ -43,6 +43,7 @@ public class FlowerGardenController {
 	@PutMapping("/{Plant_id}")
     public ResponseEntity<FlowerGarden> updateflower(@PathVariable String Plant_id, @RequestBody FlowerGarden flower) {
 		FlowerGarden currentFlower = flowersrepo.findById(Plant_id).orElseThrow(RuntimeException::new);
+		currentFlower.setPlant_id(flower.getPlant_id());
         currentFlower.setName(flower.getName());
         currentFlower.setPlant_type(flower.getPlant_type());
         currentFlower.setSeasonality(flower.getSeasonality());
