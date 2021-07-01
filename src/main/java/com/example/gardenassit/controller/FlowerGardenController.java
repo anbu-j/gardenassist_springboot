@@ -36,7 +36,7 @@ public class FlowerGardenController {
         return flowersrepo.findById(Plant_id).orElseThrow(RuntimeException::new);
     }
 	//create flowers
-	@PostMapping
+	@PostMapping("/{Plant_id}")
 	public FlowerGarden createflower(@RequestBody FlowerGarden flower) {
 		return flowerservice.createflower(flower);
 		}
