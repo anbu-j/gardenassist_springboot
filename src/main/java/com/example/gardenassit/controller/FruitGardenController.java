@@ -36,7 +36,7 @@ public class FruitGardenController {
         return fruitsrepo.findById(Plant_id).orElseThrow(RuntimeException::new);
     }
 	//create fruits
-	@PostMapping
+	@PostMapping("/{Plant_id}")
 	public FruitGarden createfruit(@RequestBody FruitGarden fruit) {
 		return fruitservice.createfruit(fruit);
 		}
