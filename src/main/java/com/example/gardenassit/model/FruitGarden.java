@@ -11,7 +11,7 @@ import com.sun.istack.NotNull;
 //import org.springframework.web.bind.annotation.CrossOrigin;
 
 @Entity
-@Table(name="flower_garden")
+@Table(name="fruit_garden")
 
 public class FruitGarden {
 	@Id
